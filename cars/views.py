@@ -46,11 +46,11 @@ def cars(request):
         body_style = request.GET.get('body_style')
         if body_style:
             cars = Cars.objects.filter(body_style__iexact=body_style)
-    if request.GET.get('min_price'):
-        min_price = request.GET.get('min_price')
-        max_price = request.GET.get('max_price')
-        if max_price:
-            cars = Cars.objects.filter(car_price__gte=min_price,car_price__lte=max_price)
+    # if request.GET.get('min_price'):
+    #     min_price = request.GET.get('min_price')
+    #     max_price = request.GET.get('max_price')
+    #     if max_price:
+    #         cars = Cars.objects.filter(car_price__gte=min_price,car_price__lte=max_price)
     context = {'cars':cars,'paginator':paginator,'page':page,
             'city_search':city_search,'year_search':year_search,
             'body_style_search':body_style_search,'transmission_search':transmission_search}
@@ -121,11 +121,11 @@ def search(request):
         if transmission:
             search_cars = Cars.objects.filter(transmission__iexact=transmission)
 
-    if request.GET.get('min_price'):
-        min_price = request.GET.get('min_price')
-        max_price = request.GET.get('max_price')
-        if max_price:
-            search_cars = Cars.objects.filter(car_price__gte=min_price,car_price__lte=max_price)
+    # if request.GET.get('min_price'):
+    #     min_price = request.GET.get('min_price')
+    #     max_price = request.GET.get('max_price')
+    #     if max_price:
+    #         search_cars = Cars.objects.filter(car_price__gte=min_price,car_price__lte=max_price)
 
     context = {'search_cars':search_cars,'condition_search':condition_search,'year_search':year_search,
                'city_search':city_search,'body_style_search':body_style_search,

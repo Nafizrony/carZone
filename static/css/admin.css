@@ -1,0 +1,78 @@
+#header {
+	background: #fff;
+	color: #333;
+	border-bottom: 2px solid #444;
+}
+#user-tools {
+	font-size: 16px;
+}
+#header a:link, #header a:visited, #logout-form button {
+	color: #000 !important;
+	font-weight: 600 !important;
+}
+.theme-toggle svg.theme-icon-when-auto, .theme-toggle svg.theme-icon-when-dark, .theme-toggle svg.theme-icon-when-light {
+	color: #000;
+}
+button {
+	background: #d7d7d7 !important;
+}
+.breadcrumbs {
+	background: #333 !important;
+	color: #ddd !important;
+	font-weight: 600 !important;
+}
+div.breadcrumbs a {
+	color: #fff !important;
+}
+caption {
+	background: #333 !important;
+}
+a.section:link, a.section:visited {
+	text-decoration: none;
+	color: #fff !important;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: #2c2c2c !important;
+}
+#changelist-filter h2 {
+	background: #333;
+}
+.button.default, input[type="submit"].default, .submit-row input.default {
+	background: #333;
+}
+.button.default, input[type="submit"].default, .submit-row input.default:hover {
+	background: #222;
+}
+.object-tools a {
+	border-radius: 15px;
+	background: #cecece !important;
+}
+.submit-row input {
+	background: #333;
+}
+.submit-row input:hover {
+	background: #111;
+}
+.selector-chosen h2 {
+	background: #333!important;
+}
+model-group a:link, a:visited {
+	text-decoration: none;
+	color: #131313 !important;
+}
+.field-__str__ a {
+	color: #111 !important;
+}
+.field-vin a {
+	color: #000 !important;
+}
+.module h2, .module caption, .inline-group h2 {
+	margin: 0;
+	padding: 8px;
+	font-weight: 400;
+	font-size: 0.8125rem;
+	text-align: left;
+	background: #000;
+	color: var(--header-link-color);
+}

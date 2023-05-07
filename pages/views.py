@@ -13,11 +13,11 @@ def home(request):
     search_year = Cars.objects.values_list('year',flat=True).distinct()
     search_body_style = Cars.objects.values_list('body_style',flat=True).distinct()
 
-    if request.GET.get('min_price'):
-        min_price = request.GET.get('min_price')
-        max_price = request.GET.get('max_price')
-        if max_price:
-          cars =   Cars.objects.filter(car_price__gte=min_price,car_price__lte=max_price)
+    # if request.GET.get('min_price'):
+    #     min_price = request.GET.get('min_price')
+    #     max_price = request.GET.get('max_price')
+    #     if max_price:
+    #       cars =   Cars.objects.filter(car_price__gte=min_price,car_price__lte=max_price)
 
 
     context = {'team_members':team_members,'features_cars':features_cars,
